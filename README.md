@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/YOUR_USERNAME/ComfyUI-loger
+git clone https://github.com/shanef3d/ComfyUI-loger
 ```
 
 2. Restart ComfyUI. The LoGeR nodes will appear in the **LoGeR** category.
