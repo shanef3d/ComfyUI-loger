@@ -31,7 +31,7 @@ def silu_backprop(dy: torch.Tensor, x: torch.Tensor):
     return dx
 
 
-@torch.compile
+@torch.compile(disable=True)
 def zeropower_via_newtonschulz5(G, steps):
     """
     modified from https://github.com/MoonshotAI/Moonlight/blob/master/examples/toy_train.py#L49
@@ -71,7 +71,7 @@ def zeropower_via_newtonschulz5(G, steps):
 
 
 
-@torch.compile
+@torch.compile(disable=True)
 # TODO: add a version that uses the torch.compile
 def fast_weight_swish_glu_weight_norm_mini_batch_apply(
     w0: torch.Tensor,
